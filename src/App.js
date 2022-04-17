@@ -6,6 +6,7 @@ import Header from './components/Pages/Homes/Header/Header';
 import Footer from './components/Pages/Homes/Footer/Footer';
 import Home from './components/Pages/Homes/Home/Home';
 import NotFound from './components/Pages/NotFount/NotFound';
+import CheckOut from './components/Pages/CheckOut/CheckOut';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blog' element={<Blog></Blog>}></Route>
+        <Route path='/checkout/:checkoutId' element={<CheckOut></CheckOut>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

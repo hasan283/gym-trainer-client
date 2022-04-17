@@ -1,11 +1,28 @@
-#services{
+.services-item{
     border: 1px solid #ddd;
     border-radius: 10px;
 }
-#services .service-info{
+.services-item .service-info{
     padding: 1rem;
 }
-#services .service-info h4{
+.services-item .service-info h4{
     font-weight: bold;
     color: #ff5929;
+}
+.services-item .service-info .checkout-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-item .service-info .checkout-btn button{
+    border: none;
+    color: #fff;
+    background: #ff5929;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.services-item .service-info .checkout-btn button:hover{
+    background: #d43f16;
 }

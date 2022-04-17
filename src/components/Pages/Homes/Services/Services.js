@@ -5,7 +5,8 @@ import './Services.css'
 const Services = () => {
     const [services] = useService();
     return (
-        <div className="container">
+        <div id="services" className="container pt-5 pb-5">
+            <h1 className='text-center pt-2 pb-4'>Treina Services</h1>
             <div className="row">
                 <div className='services-container'>
                     {
