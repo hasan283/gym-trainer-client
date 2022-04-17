@@ -1,159 +1,44 @@
 [
-
-  {
+{
     "id": "1",
-    "category": "Apple",
-    "name": "iphone 13 pro max",
-    "seller": "emajon",
+    "name": "Deadlift",
     "price": 487,
-    "stock": 15,
-    "ratings": 5,
-    "ratingsCount": 799,
-    "img": "https://assets.swappie.com/swappie-product-iphone-13-pro-max-gold.png",
-    "shipping": 49,
-    "quantity": 0
+    "img": "https://ae01.alicdn.com/kf/HTB13BQnE.R1BeNjy0Fmq6z0wVXag/strong-man-training-in-the-gym-PSY70-custom-print-wall-art-fabric-poster-frame-available-for.jpg",
+    "info": "The bread and butter of countless gym routines, this move, if done properly, will predominantly engage your back and legs, while building overall strength for you entire body."
   },
   {
     "id": "2",
-    "category": "Apple",
-    "name": "Laptop",
-    "seller": "emajon",
-    "price": 1500,
-    "stock": 19,
-    "ratings": 3,
-    "ratingsCount": 4372,
-    "img": "https://media.karousell.com/media/photos/products/2020/11/14/macbook_air_2020_black_case_1605336971_4d03ced0_progressive.jpg",
-    "shipping": 19,
-    "quantity": 0
+    "name": "T-Bar Row",
+    "price": 357,
+    "img": "https://static01.nyt.com/images/2018/09/18/well/family/sub18weight/sub18weight-superJumbo.jpg",
+    "info": "As the favorite back exercise of Arnold Schwarzenegger himself, the T-bar row transcends all mere mortal workouts simply because of the Austrian Oak’s blessing."
   },
   {
     "id": "3",
-    "category": "Apple",
-    "name": "Watch 2.0",
-    "seller": "emajon",
-    "price": 206,
-    "stock": 1,
-    "ratings": 4,
-    "ratingsCount": 2870,
-    "img": "https://www.mobilewithprices.com/products/apple-watch-series-4-steel.jpg",
-    "shipping": 15,
-    "quantity": 0
+    "name": "The Bird-Dog",
+    "price": 300,
+    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "info": "Sure, you may look a little funny doing it, but this variation on the plank challenges you to keep your back flat and stable. It goes to show that not all essential exercises are about clanging plates and bending bars."
   },
   {
     "id": "4",
-    "category": "Apple",
-    "name": "Watch 3.0",
-    "seller": "emajon",
-    "price": 106,
-    "stock": 1,
-    "ratings": 4,
-    "ratingsCount": 2870,
-    "img": "https://cdn-ray.zain.sa/wp-content/uploads/2021/04/Apple-Watch-SE-GPS-40mm-Gold.png",
-    "shipping": 15,
-    "quantity": 0
+    "name": "Pulldown",
+    "price": 320,
+    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "info": "This variation on the traditional pulldown not only strengthens your middle and upper back, it also works your shoulders, biceps, and forearms."
   },
   {
     "id": "5",
-    "category": "Apple",
-    "name": "iPhone 11 pro",
-    "seller": "emajon",
-    "price": 400,
-    "stock": 4,
-    "ratings": 5,
-    "ratingsCount": 1976,
-    "img": "https://thumbs.dreamstime.com/b/apple-iphone-pro-silver-both-sides-frontal-front-back-visible-white-background-blank-screen-triple-camera-detail-ideal-163151936.jpg",
-    "shipping": 46,
-    "quantity": 0
+    "name": "Pullups",
+    "price": 287,
+    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "info": "The pullup is a classic strength-building move that everyone needs to do in the gym. But whatever you do, don’t lose your form in favor of reps. Keep those legs straight for maximum payoff. 6 OF 30"
   },
   {
     "id": "6",
-    "category": "Apple",
-    "name": "iPhone 12 pro",
-    "seller": "emajon",
-    "price": 437,
-    "stock": 1,
-    "ratings": 4,
-    "ratingsCount": 565,
-    "img": "https://img.freepik.com/free-vector/modern-phone-2017_1053-709.jpg?size=338&ext=jpg",
-    "shipping": 36,
-    "quantity": 0
-  },
-  {
-    "id": "7",
-    "category": "Apple",
-    "name": "iPhone 13 pro max",
-    "seller": "emajon",
-    "price": 446,
-    "stock": 15,
-    "ratings": 5,
-    "ratingsCount": 3702,
-    "img": "https://www.notebookcheck.net/fileadmin/Notebooks/Apple/iPhone_13_Pro/Produktfotos_Apple_iPhone_13_Pro_1448.jpg",
-    "shipping": 29,
-    "quantity": 0
-  },
-  {
-    "id": "8",
-    "category": "Apple",
-    "name": "apple-mac-laptop",
-    "seller": "emajon",
-    "price": 900,
-    "stock": 6,
-    "ratings": 5,
-    "ratingsCount": 1688,
-    "img": "https://3.imimg.com/data3/XA/JG/MY-11460306/apple-mac-laptop-500x500.jpg",
-    "shipping": 48,
-    "quantity": 0
-  },
-  {
-    "id": "9",
-    "category": "Apple",
-    "name": "apple-mac-laptop",
-    "seller": "emajon",
-    "price": 1663,
-    "stock": 46,
-    "ratings": 4,
-    "ratingsCount": 50,
-    "img": "https://imageio.forbes.com/specials-images/imageserve/5fd00ea644cd62376ce2b6c1/In-this-photo-illustration-a-13inch-Macbook-pro-seen---/960x0.jpg?fit=bounds&format=jpg&width=960",
-    "shipping": 20,
-    "quantity": 0
-  },
-  {
-    "id": "10",
-    "category": "Apple",
-    "name": "apple-mac-laptop",
-    "seller": "emajon",
-    "price": 1048,
-    "stock": 41,
-    "ratings": 3,
-    "ratingsCount": 4483,
-    "img": "https://i.pcmag.com/imagery/articles/0141oab4nYsMiSt8Zx7xKEg-5.fit_lim.size_1050x.jpg",
-    "shipping": 8,
-    "quantity": 0
-  },
-  {
-    "id": "11",
-    "category": "Aa4 Tech",
-    "name": "Head phone",
-    "seller": "emajon",
-    "price": 89,
-    "stock": 43,
-    "ratings": 4,
-    "ratingsCount": 1239,
-    "img": "https://www.computerhope.com/jargon/h/headset.png",
-    "shipping": 27,
-    "quantity": 0
-  },
-  {
-    "id": "12",
-    "category": "Aa4 Tech",
-    "name": "Head phone",
-    "seller": "emajon",
-    "price": 15,
-    "stock": 26,
-    "ratings": 5,
-    "ratingsCount": 4557,
-    "img": "https://m.media-amazon.com/images/I/41gjDNPjHHL.jpg",
-    "shipping": 33,
-    "quantity": 0
-  } 
+    "name": "Standing Barbell Curl",
+    "price": 310,
+    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "info": "This traditional bodybuilding move is a staple for building bigger biceps. In a controlled motion, bend your elbows and curl the barbell as close to your shoulders as you can. Pause at the top, then slowly return your arms to their original position."
+  }
 ]

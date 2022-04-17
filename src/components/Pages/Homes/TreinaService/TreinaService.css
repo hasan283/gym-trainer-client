@@ -1,0 +1,15 @@
+.service-container .service-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media screen and (max-width: 992px) {
+    .service-container .service-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 568px) {
+    .service-container .service-content{
+        grid-template-columns: 1fr;
+    }
+}

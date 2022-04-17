@@ -17,6 +17,9 @@
     margin-top: 10rem;
     color: #fff;
 }
+.banner-info h1 span{
+    color: red;
+}
 @media screen and (max-width: 568px) {
     .banner-info{
         margin-top: 3rem;;

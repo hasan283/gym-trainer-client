@@ -8,8 +8,8 @@ const Banner = () => {
             <img src={banner} alt="" />
             <div className="banner-content">
                 <div className="banner-info">
-                    <h1>WelCome To</h1>
-                    <h1>My Gym Training Center!</h1>
+                    <h1>KEEP YOUR BODY</h1>
+                    <h1>FIT & <span>STRONG</span></h1>
                 </div>
             </div>
         </div>
