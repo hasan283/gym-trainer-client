@@ -1,0 +1,24 @@
+.question-container{
+    background: antiquewhite;
+}
+.question-container .question-one{
+    background: #000;
+    color: #fff;
+}
+.question-container .question-one .question{
+    color: red;
+}
+.question-container .question-two{
+    background: red;
+    color: #fff;
+}
+.question-container .question-two .question{
+    color: #000;
+}
+.question-container .question-three{
+    background: blue;
+    color: #fff;
+}
+.question-container .question-two .question{
+    color: #000;
+}
