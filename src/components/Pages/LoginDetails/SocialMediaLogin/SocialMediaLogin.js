@@ -4,6 +4,7 @@ import github from '../../../Image/Logo/github.png'
 import { useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init';
 import { useLocation, useNavigate } from 'react-router-dom';
+import Loading from '../Loading/Loading';
 
 const SocialMediaLogin = () => {
 
@@ -16,11 +17,13 @@ const SocialMediaLogin = () => {
     let from = location.state?.from?.pathname || "/";
     let errorElement;
 
+    if (loading || loading1) {
+        return <Loading></Loading>
+    }
+
     if (error || error1) {
 
-        errorElement = <div>
-            <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
-        </div>
+        errorElement = <p className='text-danger'>Error: {error?.message} {error1?.message}</p>
 
     }
 

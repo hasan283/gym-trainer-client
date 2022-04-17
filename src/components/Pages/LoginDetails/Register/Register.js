@@ -1,9 +1,10 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../../firebase.init'
 import SocialMediaLogin from '../SocialMediaLogin/SocialMediaLogin';
+import Loading from '../Loading/Loading';
 
 const Register = () => {
     const [
@@ -11,26 +12,33 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, updatedError] = useUpdateProfile(auth);
     const navigate = useNavigate()
 
 
     if (user) {
-        navigate(`/checkout`);
+        console.log(user)
     }
     // Toggle Login Page page 
     const navigateLogin = event => {
         navigate('/login')
     }
 
-    const handleRegister = event => {
+    const handleRegister = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        createUserWithEmailAndPassword(email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+        console.log('Updated profile');
+        navigate('/home');
 
+    }
+    if (loading || updating) {
+        return <Loading></Loading>
     }
     // Register Form  
     return (
@@ -40,23 +48,17 @@ const Register = () => {
 
 
                 <Form.Group className="mb-3" controlId="formBasicText">
-                    <Form.Label>Enter Your Name</Form.Label>
                     <Form.Control type="text" name="name" placeholder="Your Name" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" name="email" placeholder="Enter email" />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
                     <Form.Control type="password" name="password" placeholder="Password" />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button className='w-50 mx-auto d-block' variant="primary" type="submit">
                     Register
                 </Button>
             </Form>
