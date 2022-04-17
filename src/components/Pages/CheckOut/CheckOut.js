@@ -4,8 +4,9 @@ import { useParams } from 'react-router-dom';
 const CheckOut = () => {
     const { checkoutId } = useParams()
     return (
-        <div>
-            <h1>This is Checkout Page{checkoutId}</h1>
+        <div className='container pt-5 pb-5'>
+            <h1>Description:</h1>
+            <p>{checkoutId}</p>
         </div>
     );
 };

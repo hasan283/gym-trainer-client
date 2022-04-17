@@ -4,7 +4,7 @@ import './TreinaService.css'
 
 
 const TreinaService = (props) => {
-    const { id, img, name, service, price, info } = props.service;
+    const { img, name, service, price, info } = props.service;
     const navigate = useNavigate()
     const navigateServiceDetails = id => {
         navigate(`/checkout/${id}`)
@@ -18,7 +18,7 @@ const TreinaService = (props) => {
                 <p><b>Price:</b> ${price}</p>
                 <p><b>Description:</b> {info.slice(0, 30)}...</p>
                 <div className="checkout-btn">
-                    <button onClick={() => navigateServiceDetails(id)}>Checkout Now</button>
+                    <button onClick={() => navigateServiceDetails(info)}>Checkout Now</button>
                 </div>
             </div>
         </div>

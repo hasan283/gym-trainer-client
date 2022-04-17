@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCYnQe3Y1b3ebaGDGtHiV5fPVaHpBpHS_4",
-    authDomain: "gym-trainer-4437e.firebaseapp.com",
-    projectId: "gym-trainer-4437e",
-    storageBucket: "gym-trainer-4437e.appspot.com",
-    messagingSenderId: "715561899930",
-    appId: "1:715561899930:web:8277c78cb3653b90d34c23"
+    apiKey: process.env.REACT_APP_apiKey,
+    authDomain: process.env.REACT_APP_authDomain,
+    projectId: process.env.REACT_APP_projectId,
+    storageBucket: process.env.REACT_APP_storageBucket,
+    messagingSenderId: process.env.REACT_APP_messagingSenderId,
+    appId: process.env.REACT_APP_appId,
 };
 
 // Initialize Firebase
