@@ -1,9 +1,15 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
+import auth from '../../../../firebase.init';
 import Logo from '../../../Image/Logo/treina-logo.png';
 
 const Header = () => {
+    const [user] = useAuthState(auth)
+
+    // Handle Sing Out 
+
     return (
         <>
 
@@ -18,12 +24,19 @@ const Header = () => {
                         <Nav className="mx-auto">
                             <Nav.Link href="home#trainer">Trainer</Nav.Link>
                             <Nav.Link href="home#services">Services</Nav.Link>
-                            <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
 
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="/login">Login</Nav.Link>
+
+                            <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+
+                            {
+                                user ?
+                                    <button onClick={handleSingOut}>Sing Out</button>
+                                    :
+                                    <Nav.Link as={Link} to="/login">Login</Nav.Link>
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
