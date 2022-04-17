@@ -1,15 +1,11 @@
-.service-container .service-content{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+#services{
+    border: 1px solid #ddd;
+    border-radius: 10px;
 }
-
-@media screen and (max-width: 992px) {
-    .service-container .service-content{
-        grid-template-columns: repeat(2, 1fr);
-    }
+#services .service-info{
+    padding: 1rem;
 }
-@media screen and (max-width: 568px) {
-    .service-container .service-content{
-        grid-template-columns: 1fr;
-    }
+#services .service-info h4{
+    font-weight: bold;
+    color: #ff5929;
 }

@@ -2,43 +2,49 @@
 {
     "id": "1",
     "name": "Deadlift",
+    "service": "Personal Trainer",
     "price": 487,
-    "img": "https://ae01.alicdn.com/kf/HTB13BQnE.R1BeNjy0Fmq6z0wVXag/strong-man-training-in-the-gym-PSY70-custom-print-wall-art-fabric-poster-frame-available-for.jpg",
+    "img": "https://i.ibb.co/5hD3MGj/12-1-Reverse-Grip-Lat-Pulldown-Start-Akron-Personal-training-near-me-fitness-instructor-full-scale-f.jpg",
     "info": "The bread and butter of countless gym routines, this move, if done properly, will predominantly engage your back and legs, while building overall strength for you entire body."
   },
   {
     "id": "2",
     "name": "T-Bar Row",
+    "service": "Gym & Fitness",
     "price": 357,
-    "img": "https://static01.nyt.com/images/2018/09/18/well/family/sub18weight/sub18weight-superJumbo.jpg",
+    "img": "https://i.ibb.co/7rcs4vZ/16464913323823.jpg",
     "info": "As the favorite back exercise of Arnold Schwarzenegger himself, the T-bar row transcends all mere mortal workouts simply because of the Austrian Oak’s blessing."
   },
   {
     "id": "3",
     "name": "The Bird-Dog",
+    "service": "Gym & Fitness",
     "price": 300,
-    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "img": "https://i.ibb.co/vm85Rn4/Benefits-of-Pull-Ups.jpg",
     "info": "Sure, you may look a little funny doing it, but this variation on the plank challenges you to keep your back flat and stable. It goes to show that not all essential exercises are about clanging plates and bending bars."
   },
   {
     "id": "4",
     "name": "Pulldown",
+    "service": "Online Class",
     "price": 320,
-    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "img": "https://i.ibb.co/PtdCRKn/H6w9m-UQg58-T3-Sd-ML7-Lv-Hj-J.jpg",
     "info": "This variation on the traditional pulldown not only strengthens your middle and upper back, it also works your shoulders, biceps, and forearms."
   },
   {
     "id": "5",
     "name": "Pullups",
+    "service": "Weight Routines",
     "price": 287,
-    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "img": "https://i.ibb.co/175CkL9/maxresdefault.jpg",
     "info": "The pullup is a classic strength-building move that everyone needs to do in the gym. But whatever you do, don’t lose your form in favor of reps. Keep those legs straight for maximum payoff. 6 OF 30"
   },
   {
     "id": "6",
     "name": "Standing Barbell Curl",
+    "service": "Bodyweight",
     "price": 310,
-    "img": "https://i.ibb.co/9sC5yGC/home-gym-ideas-hbx020122inspoopener-002-1645113976.jpg",
+    "img": "https://i.ibb.co/nwSw1Sc/t-bar-row.jpg",
     "info": "This traditional bodybuilding move is a staple for building bigger biceps. In a controlled motion, bend your elbows and curl the barbell as close to your shoulders as you can. Pause at the top, then slowly return your arms to their original position."
   }
 ]

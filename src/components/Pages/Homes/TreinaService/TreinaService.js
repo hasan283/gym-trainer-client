@@ -3,14 +3,15 @@ import './TreinaService.css'
 
 
 const TreinaService = (props) => {
-    const { img, name, price, info } = props.service;
+    const { img, name, service, price, info } = props.service;
     return (
-        <div id="services" className="service-container">
-            <div className="container">
-                <div className="serivice-content">
-                    <div className="service-item">
-                    </div>
-                </div>
+        <div id="services">
+            <img src={img} alt="" />
+            <div className="service-info">
+                <h4>{name}</h4>
+                <h6>{service}</h6>
+                <p><b>Price:</b> ${price}</p>
+                <p><b>Description:</b> {info.slice(0, 30)}...</p>
             </div>
         </div>
     );
