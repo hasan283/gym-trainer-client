@@ -13,6 +13,7 @@ const Login = () => {
     const navigate = useNavigate();
     const location = useLocation()
     let from = location.state?.from?.pathname || "/";
+    let errorElement;
 
     const [
         signInWithEmailAndPassword,
@@ -31,6 +32,13 @@ const Login = () => {
 
     if (user) {
         navigate(from, { replace: true });
+    }
+    if (error) {
+
+        errorElement = <div>
+            <p className='text-danger'>Error: {error?.message}</p>
+        </div>
+
     }
     // Toggle Register page 
     const navigateRegister = event => {
@@ -58,6 +66,7 @@ const Login = () => {
                     Login
                 </Button>
             </Form>
+            {errorElement}
 
             <p className='mt-5'>New To Treina? <span className='text-danger' style={{ cursor: 'pointer' }} onClick={navigateRegister}>Please Register</span></p>
 
