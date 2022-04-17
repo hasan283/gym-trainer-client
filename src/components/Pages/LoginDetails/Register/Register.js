@@ -15,7 +15,7 @@ const Register = () => {
 
 
     if (user) {
-        navigate('/home');
+        navigate(`/checkout`);
     }
     // Toggle Login Page page 
     const navigateLogin = event => {
