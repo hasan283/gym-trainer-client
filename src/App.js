@@ -18,32 +18,15 @@ import Order from './components/Pages/Order/Order';
 
 
 function App() {
-  // <Route path='/' element={<Home></Home>}></Route>
-  //       <Route path='/home' element={<Home></Home>}></Route>
-  //       <Route path='/about' element={<About></About>}></Route>
-  //       <Route path='/blog' element={<Blog></Blog>}></Route>
+
   return (
     <div>
       <Header></Header>
       <Routes>
-        <Route path='/' element={
-          <Home></Home>
-        }></Route>
-        <Route path='/home' element={
-          <Home></Home>
-        }>
-
-        </Route>
-        <Route path='/about' element={
-          <RequireAuth>
-            <About></About>
-          </RequireAuth>
-        }></Route>
-        <Route path='/blog' element={
-          <RequireAuth>
-            <Blog></Blog>
-          </RequireAuth>
-        }></Route>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/about' element={<About></About>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/checkout/:checkoutId' element={
           <RequireAuth>
             <CheckOut></CheckOut>
