@@ -11,7 +11,8 @@ const Header = () => {
 
     // Handle Sing Out 
     const handleSingOut = () => {
-        signOut(auth)
+        signOut(auth);
+        localStorage.removeItem('Access Token');
     }
 
     return (
@@ -26,6 +27,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="mx-auto">
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
                             <Nav.Link href="home#trainer">Trainer</Nav.Link>
                             <Nav.Link href="home#services">Services</Nav.Link>
                             <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
@@ -34,6 +36,13 @@ const Header = () => {
                         <Nav>
 
                             <Nav.Link as={Link} to="/about">About Us</Nav.Link>
+                            {
+                                user && <>
+                                    <Nav.Link as={Link} to="/addservice">Add Service</Nav.Link>
+                                    <Nav.Link as={Link} to="/manage">Manage Service</Nav.Link>
+                                    <Nav.Link as={Link} to="/order">Orders</Nav.Link>
+                                </>
+                            }
 
                             {
                                 user ?
