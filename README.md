@@ -1,4 +1,4 @@
-# This is Gym Trainer Website Website
+# This is Gym a Trainer Website Website
 
 ## Live Website [Click me](https://gym-trainer-4437e.web.app/).
 
